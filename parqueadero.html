@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes del Parqueadero</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Registro de Clientes del Parqueadero</h2>
+        <form method="POST" action="conexion.php">
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" class="form-control" id="nombres" name="nombres" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo_documento">Tipo de Documento</label>
+                <select class="form-control" id="tipo_documento" name="tipo_documento" required>
+                    <option value="cedula">Cédula de Ciudadanía</option>
+                    <option value="tarjeta_identidad">Tarjeta de Identidad</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numero_documento">Número de Documento</label>
+                <input type="text" class="form-control" id="numero_documento" name="numero_documento" required>
+            </div>
+            <div class="form-group">
+                <label for="placa_vehiculo">Placa del vehículo</label>
+                <input type="text" class="form-control" id="placa_vehiculo" name="placa_vehiculo" required>
+            </div>
+            <div class="form-group">
+                <label for="marca_vehiculo">Marca del vehículo</label>
+                <input type="text" class="form-control" id="marca_vehiculo" name="marca_vehiculo" required>
+            </div>
+            <div class="form-group">
+                <label for="color_vehiculo">Color del vehículo</label>
+                <input type="text" class="form-control" id="color_vehiculo" name="color_vehiculo" required>
+            </div>
+            <div class="form-group">
+                <label for="hora_ingreso">Hora de ingreso</label>
+                <input type="time" class="form-control" id="hora_ingreso" name="hora_ingreso" required>
+            </div>
+            <div class="form-group">
+                <label for="hora_salida">Hora de salida</label>
+                <input type="time" class="form-control" id="hora_salida" name="hora_salida" required>
+            </div>
+            <div class="form-group">
+                <label for="piso_parqueadero">Piso del parqueadero</label>
+                <input type="number" class="form-control" id="piso_parqueadero" name="piso_parqueadero" required>
+            </div>
+            <div class="form-group">
+                <label for="espacios_piso">Espacio del piso</label>
+                <input type="number" class="form-control" id="piso_parqueadero" name="piso_parqueadero" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
